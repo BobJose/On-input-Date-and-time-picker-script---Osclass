@@ -1,0 +1,49 @@
+I want to change On input Date and time picker script, can anyone help me, below are the code for my theme form together with original theme date and time picker script code with  new script  ,the only problem i face on my new script is it doesnt call the script when someone click
+input event start date
+
+
+// Here is post form code
+
+<label><?php _e('Event date & time  ', 'duoevents'); ?></label>
+
+                <input type="text" class="dates" id="eventdateStart" name="s_startdate" value="<?php if($startdate != ''){echo osc_esc_html($startdate);}else{echo osc_esc_html($detail['s_startdate']);}?>" placeholder="<?php echo osc_esc_html(__('Event Start date & time','duoevents')); ?>" required="required" /> <span class="arrow-dates">&#8703;</span>
+
+                <input type="text" class="dates" id="eventdateEnd" name="s_enddate" value="<?php if($enddate != ''){echo osc_esc_html($enddate);}else{echo osc_esc_html($detail['s_enddate']);}?>" placeholder="<?php echo osc_esc_html(__('Event End date & time','duoevents')); ?>" required="required" />
+				
+				
+				
+				
+<script type="text/javascript" src="<?php echo osc_base_url(); ?>oc-content/themes/duoevents/js/Datetimepicker/jquery.datetimepicker.full.js"></script>
+
+<link rel="stylesheet" type="text/css" href="<?php echo osc_current_web_theme_url('css/Datetimepicker/jquery.datetimepicker.css')?>" />				
+				
+				
+
+  // Here is Original theme script
+			
+<script type="text/javascript">
+
+        $('#ticketdateStart').datetimepicker({
+
+</script>
+
+script source https://xdsoft.net/jqplugins/datetimepicker/
+
+
+
+
+
+  // Here is the New script javascript code
+
+
+ <script type="text/javascript">
+
+        $('#ticketdateStart').jsRapDateTimePicker({
+
+</script>
+
+
+Script source https://www.jqueryscript.net/time-clock/rap-date-time-picker.html
+
+
+
